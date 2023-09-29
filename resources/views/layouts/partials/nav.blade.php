@@ -8,7 +8,7 @@
             <div class="collapse navbar-collapse" id="navbarColor01">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link {{ Request::is('/') ? 'active' : '' }}" href="{{ route('home') }}">Inicio</a> 
+                        <a class="nav-link {{ Request::is('/') ? 'active' : '' }}" href="{{ route('home') }}">Inicio</a>
                     </a>
                 </li>
                 <li class="nav-item">
@@ -17,12 +17,9 @@
                 <li class="nav-item">
                     <a class="nav-link {{ Request::is('product') ? 'active' : '' }}"  href="{{ route('product.index') }}">Gestionar productos </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Gestionar ventas</a>
-                </li>
-                
+
             </ul>
-            
+
         </div>
     </div>
 </nav>

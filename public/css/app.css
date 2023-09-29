@@ -12220,3 +12220,54 @@ textarea.form-control-lg {
 .notification.show {
   animation: slideIn 0.5s ease-in-out;
 }
+
+footer {
+  background-color: #333; /* Color oscuro de fondo */
+  color: white;
+  padding: 20px;
+  text-align: right;
+  font-size: 14px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.responsables ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.responsables {
+  width: 40%;
+}
+
+.responsables li {
+  
+  margin-bottom: 5px;
+  text-align: left;
+  padding-left: 2%;
+}
+
+.responsables p {
+  text-align: left;
+}
+
+/* Estilo que alinea a la derecha y abajo */
+.info {
+  text-align: right;
+  text-align: end;
+}
+.info p {
+  align-self: baseline;
+}
+
+/* Estilo para el enlace de derechos de autor */
+.info a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}

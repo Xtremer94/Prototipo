@@ -12271,3 +12271,22 @@ footer {
   text-decoration: none;
   font-weight: bold;
 }
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Estilo para el contenido de la página */
+/* Agrega estilos para el contenido de la página según tus necesidades */
+
+footer {
+  background-color: #333; /* Color oscuro de fondo */
+  color: white;
+  padding: 20px;
+  text-align: right;
+  font-size: 14px;
+  margin-top: auto; /* Empuja el footer hacia abajo */
+}

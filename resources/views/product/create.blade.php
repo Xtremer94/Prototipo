@@ -1,26 +1,44 @@
 @extends('layouts.lay')
 
 @section('content')
+
+<div style="width: 60%; margin-left: 5%; margin-top: 2%;">
+    
     <form method="POST" action="{{ route('product.store') }}">
-        @csrf
-        <label>Nombre del producto:</label>
-        <input type="text"name="name" value="{{  old('name') }}"><br><br>
-        @error('name')
-            <p style="color:red;">{{ $message }}</p>
-        @enderror
-
-        <label for="">stock del producto:</label>
-        <input type="number" name="stock" value="{{  old('stock') }}"><br><br>
-        @error('stock')
-            <p style="color:red;">{{ $message }}</p>
-        @enderror
-
-        <label for="">Precio del producto:</label>
-        <input type="text" name="price" value="{{  old('price') }}"><br><br>
-        @error('price')
-            <p style="color:red;">{{ $message }}</p>
-        @enderror
-
-        <input type="submit" value="Crear">
+        <fieldset>
+            <legend>Agregar un nuevo producto</legend>
+            
+            <div class="form-group">
+                @csrf
+                <label  for="name" class="form-label mt-4">Nombre del producto:</label>
+                <input class="form-control" type="text" name="name" value="{{  old('name') }}">
+                @error('name')
+                <p style="color:red;">{{ $message }}</p>
+                @enderror
+            </div>
+            <div class="form-group">
+                <label  for="stock" class="form-label mt-4">Stock del producto:</label>
+                <input class="form-control" type="number" name="stock" value="{{ old('stock') }}">
+                @error('stock')
+                <p style="color:red;">{{ $message }}</p>
+                @enderror
+            </div>
+            
+            <div class="form-group">
+                <label for="price" class="form-label mt-4">Precio del producto::</label>
+                <input class="form-control" type="text" name="price" value="{{ old('price') }}">
+                @error('price')
+                <p style="color:red;">{{ $message }}</p>
+                @enderror
+            </div>
+            
+            <br>
+            <input class="btn btn-primary" type="submit" value="Crear">
+            <a href="{{ route('product.index') }}" class="btn btn-info">Cancelar</a>
+            
+        </fieldset>
     </form>
+    
+</div>
+
 @endsection

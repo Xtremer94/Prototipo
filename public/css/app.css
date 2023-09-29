@@ -12204,3 +12204,19 @@ textarea.form-control-lg {
   width: 100%;
   max-width: 100%;
 }
+.notification-container {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 9999;
+  width: 300px; /* Ajusta el ancho según tus necesidades */
+}
+
+.notification {
+  margin-bottom: 10px; /* Espacio entre notificaciones */
+}
+
+/* Animación de entrada */
+.notification.show {
+  animation: slideIn 0.5s ease-in-out;
+}

@@ -1,5 +1,7 @@
+<div class="notification-container">
 @if ($message = Session::get('success'))
-<div id="success-alert" class="alert alert-dismissible alert-success">
+
+<div id="success-alert" class="alert alert-dismissible alert-success notification ">
     <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
     <p>{{ $message }}</p>
 </div>
@@ -11,7 +13,7 @@
 @endif
 
 @if ($message = Session::get('danger'))
-<div id="danger-alert" class="alert alert-dismissible alert-danger">
+<div id="danger-alert" class="alert alert-dismissible alert-danger notification ">
     <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
     <p>{{ $message }}</p>
     <script>
@@ -23,3 +25,4 @@
 
 
 @endif
+</div>

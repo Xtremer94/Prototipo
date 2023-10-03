@@ -12290,3 +12290,25 @@ footer {
   font-size: 14px;
   margin-top: auto; /* Empuja el footer hacia abajo */
 }
+
+.nav-item{
+  height: 100%;
+}
+
+.nav-link {
+  height: 100%;
+  margin-top: 1%;
+}
+
+.li-active{
+  background-color: #1e3852;
+  height: 100%;
+}
+
+
+body {
+  background-size: cover; /* Otras opciones incluyen 'contain', '100% 100%', etc. */
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Esto mantiene la imagen fija mientras se desplaza la página. Opcional. */
+  background-position: center; /* Esto coloca la imagen en el centro. Opcional. */
+}

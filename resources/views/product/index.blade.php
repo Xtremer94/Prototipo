@@ -3,8 +3,10 @@
 @section('content')
 
 <div class="d-grid gap-2" style="margin:2%">
-    <a href="{{ route('product.create') }}">
-        <button class="btn btn-lg btn-primary" type="button">Ingresar nuevo producto</button>
+    <a href="{{ route('product.create') }}" style="width: 25%;">
+        <button class="btn btn-lg btn-primary" type="button" style="width: 100%;">
+        <i class="fa-solid fa-circle-plus"></i> Ingresar nuevo producto
+        </button>
     </a>
     
 </div>
@@ -36,14 +38,14 @@
                 <th scope="row"><a class="text-info" href="{{ route('product.show', ['product' => $product->id]) }}">{{ $product->name }}</a></th>
                 <td>
                     <a href="{{ route('product.edit', ['product' => $product->id]) }}">
-                        <button type="button" class="btn btn-outline-warning widthmax" >Editar</button>
+                        <button type="button" class="btn btn-outline-warning widthmax" ><i class="fa-solid fa-pen-to-square"></i> Editar</button>
                     </a> 
                 </td>
                 <td>  
                     <form method="POST"  action="{{ route('product.destroy', ['product' => $product->id]) }}" class="widthmax">
                         @csrf
                         @method('DELETE')
-                        <input type="submit"class="btn btn-outline-danger widthmax" value="ELIMINAR" >
+                        <input type="submit"class="btn btn-outline-danger widthmax" value="&#x1f167; ELIMINAR" >
                     </form>
                 </td>
             </tr>

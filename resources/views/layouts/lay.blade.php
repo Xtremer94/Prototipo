@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="{{ asset('css/app.css')}}">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="icon" href="{{ asset('MMEB.ico') }}">
-    <title>Manage My E-Business</title>
+    <title>Digi-solutions</title>
 </head>
 <body>
     @include('layouts.partials.messages')

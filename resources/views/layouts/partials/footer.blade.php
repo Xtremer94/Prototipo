@@ -6,7 +6,7 @@
                 <li>Yuliana Oliva</li>
                 <li>Keneth Urrutia</li>
                 <li>Josmar Requena</li>
-                <li>Jeymi</li>
+                <li>Jeymi Pelicó</li>
                 <li>Carlos</li>
             </ul>
         </div>

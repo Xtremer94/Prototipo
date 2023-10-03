@@ -6,14 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ asset('css/app.css')}}">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="icon" href="{{ asset('MMEB.ico') }}">
+    <script src="https://kit.fontawesome.com/8ed8cc8801.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="{{ asset('DGSL.png') }}">
     <title>Digi-solutions</title>
 </head>
-<body>
+<body style="background-image: url('{{ asset('bg.png') }}');">
     @include('layouts.partials.messages')
     @include('layouts.partials.nav')
+
+    
     @yield('content')
     <br><br>
     @include('layouts.partials.footer')
+
+
+    
 </body>
 </html>

@@ -7,7 +7,7 @@
                 <li>Keneth Urrutia</li>
                 <li>Josmar Requena</li>
                 <li>Jeymi Pelicó</li>
-                <li>Carlos</li>
+                <li>Carlos Gutierrez</li>
             </ul>
         </div>
         <div class="info">

@@ -23,7 +23,7 @@ class ProductRequest extends FormRequest
     {
 
         if ($this->isMethod('PUT')) {
-            // dd($this->route('client')->id);
+
             return [
                 'name' => "required|max:200|min:3|unique:products,name,{$this->route('product')->id}",
                 'stock' => 'required|integer|min:0',

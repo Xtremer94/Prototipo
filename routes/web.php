@@ -22,6 +22,6 @@ Route::get('/', function () {
 
 Route::resource('/client', ClientController::class);
 
-Route::resource('product', ProductController::class);
+Route::resource('/product', ProductController::class);
 
 Route::resource('/sell', SellController::class);

@@ -2,27 +2,27 @@
 
 @section('content')
 
-<div style="margin: 2%;" >
+<div  class="table table-hover" style="margin: 2%;" >
     
     
     <table style="font-size: 25px; width: 40%;">
-        <tr>
+        <tr class="table-active" >
             <th>Nit: </th>
             <td>{{ $client->nit }}</td>
         </tr>
-        <tr>
+        <tr class="table-active" >
             <th>Nombre: </th>
             <td>{{ $client->name }}</td>
         </tr>
-        <tr>
+        <tr class="table-active" >
             <th>Edad: </th>
             <td>{{ $client->email }}</td>
         </tr>
-        <tr>
+        <tr class="table-active" >
             <th>Número: </th>
             <td>{{ $client->contact }}</td>
         </tr>
-        <tr>
+        <tr class="table-active" >
             <th>Dirección: </th>
             <td>{{ $client->location }}</td>
         </tr>

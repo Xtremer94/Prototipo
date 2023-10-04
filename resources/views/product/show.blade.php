@@ -6,16 +6,16 @@
 <div style="margin: 2%;" >
     
     
-    <table style="font-size: 25px; width: 40%;">
-        <tr>
+    <table  class="table table-hover" style="font-size: 25px; width: 50%;">
+        <tr class="table-active">
             <th>Nombre: </th>
             <td>{{ $product->name }}</td>
         </tr>
-        <tr>
+        <tr class="table-active">
             <th>Stock del producto: </th>
             <td>{{ $product->stock }}</td>
         </tr>
-        <tr>
+        <tr class="table-active">
             <th>Precio del producto: </th>
             <td>Q {{ $product->price }}</td>
         </tr>
